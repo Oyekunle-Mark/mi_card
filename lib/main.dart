@@ -27,6 +27,16 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
+            Text(
+              'SOFTWARE DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.5,
+                color: Colors.teal[100],
+              ),
+            )
           ],
         ),
       ),

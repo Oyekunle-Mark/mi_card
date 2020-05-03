@@ -37,50 +37,37 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal[100],
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+234 8064 2805',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Pro',
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '+234 8064 2805',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontSize: 20.0,
-                      fontFamily: 'Source Sans Pro',
-                    ),
-                  )
-                ],
+                ),
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10.0),
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(Icons.email, color: Colors.teal),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+            Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
                     'chief@chief.com',
                     style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.teal.shade900,
                         fontFamily: 'Source Sans Pro'),
                   ),
-                ],
-              ),
-            ),
+                )),
           ],
         ),
       ),

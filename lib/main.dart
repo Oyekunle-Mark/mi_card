@@ -19,6 +19,13 @@ class MyApp extends StatelessWidget {
               radius: 50.0,
               backgroundImage: AssetImage('images/chief.jpg'),
             ),
+            Text(
+              'Oyekunle Oloyede',
+              style: TextStyle(
+                  fontSize: 35.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
